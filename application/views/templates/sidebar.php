@@ -51,14 +51,13 @@
 							Crear Noticia</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="<?php echo site_url('/noticias/ver') ?>">
 							<i class="fa fa-bars"></i>
 							Ver Noticias</a>
 						</li>
-						
+
 					</ul>
 				</li>
-				
 				<li class="last ">
 					<a href="javascript:;">
 					<i class="icon-pointer"></i>

@@ -2,9 +2,22 @@
 
 class Noticias extends CI_Controller {
 
-	public function ver($value='')
+	public function __construct()
 	{
-		# code...
+		parent::__construct();
+		$this->load->model('noticiasmodel');
+	}
+
+	public function ver()
+	{
+				$data['tittle'] = "Bienvenido | Noticias";
+				$data['noticias'] = $this->noticiasmodel->obtener_noticias();
+				$this->load->view("/templates/head", $data);
+				$this->load->view("/templates/header");
+				$this->load->view("/templates/sidebar");
+				$this->load->view("/noticias/catalogo",$data);
+				$this->load->view("/templates/quick-sidebar");
+				$this->load->view("/templates/footer");
 	}
 	public function crear($accion = 'formulario')
 	{
@@ -22,8 +35,9 @@ class Noticias extends CI_Controller {
 				# code...
 				break;
 			case 'insertar':
+			echo "entre a insertar";
 				break;
-			
+
 			default:
 				# code...
 				show_404();

@@ -6,17 +6,17 @@
 				<ul class="nav nav-tabs nav-justified">
 					<li class="active">
 						<a href="#quick_sidebar_tab_1" data-toggle="tab">
-						Users <span class="badge badge-danger">2</span>
+						Usuarios <span class="badge badge-danger">2</span>
 						</a>
 					</li>
 					<li>
 						<a href="#quick_sidebar_tab_2" data-toggle="tab">
-						Alerts <span class="badge badge-success">7</span>
+						Notificaciones <span class="badge badge-success">7</span>
 						</a>
 					</li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						More<i class="fa fa-angle-down"></i>
+						Más<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu pull-right" role="menu">
 							<li>
@@ -43,17 +43,17 @@
 				<div class="tab-content">
 					<div class="tab-pane active page-quick-sidebar-chat" id="quick_sidebar_tab_1">
 						<div class="page-quick-sidebar-chat-users" data-rail-color="#ddd" data-wrapper-class="page-quick-sidebar-list">
-							<h3 class="list-heading">Staff</h3>
+							<h3 class="list-heading">Equipo</h3>
 							<ul class="media-list list-items">
 								<li class="media">
 									<div class="media-status">
-										<span class="badge badge-success">8</span>
+										<span class="badge badge-success">1</span>
 									</div>
-									<img class="media-object" src="../../assets/admin/layout/img/avatar3.jpg" alt="...">
+									<img class="media-object" src="../../assets/admin/layout/img/SoulEater_Logo_by_Vh4n.png" alt="...">
 									<div class="media-body">
-										<h4 class="media-heading">Bob Nilson</h4>
+										<h4 class="media-heading">Wero Loco</h4>
 										<div class="media-heading-sub">
-											 Project Manager
+											 El que recoge la basura.
 										</div>
 									</div>
 								</li>
