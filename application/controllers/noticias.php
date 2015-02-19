@@ -35,8 +35,20 @@ class Noticias extends CI_Controller {
 				# code...
 				break;
 			case 'insertar':
-			echo "entre a insertar";
-				break;
+				$noticia = array(
+					'titulo'=> $this->input->post('titulo'),
+					'contenido'=> $this->input->post('contenido'),
+					'fecha'=> $this->input->post('fecha')
+				);
+
+				if ($this->noticiasmodel->insertar_noticias($noticia)) {
+					$respuesta = array('exito' => TRUE, 'mensaje'=> 'Se inserto la noticia con exito.');
+				}else{
+					$respuesta = array('exito' => FALSE, 'mensaje'=> 'Error, no se inserto.');
+				}
+
+				$this->output->set_content_type('json')->set_output(json_encode($respuesta));
+			break;
 
 			default:
 				# code...

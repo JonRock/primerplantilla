@@ -18,9 +18,9 @@ class NoticiasModel extends CI_Model {
 		}
 
 	}
-	public function insertar_noticias($value='')
+	public function insertar_noticias($noticia)
 	{
-		# code...
+		return $this->db->insert('noticias', $noticia);
 	}
 
 }

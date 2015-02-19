@@ -79,38 +79,38 @@
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
 						<h4 class="modal-title">Nueva Noticia</h4>
 				</div>
-				<div class="modal-body">
-					<!-- BEGIN FORM-->
-					<form action="<?php echo site_url('/noticias/crear/insertar') ?>" class="form-horizontal" id="formulario_nueva_noticia">
-						<div class="form-body">
-							<label class="control-label col-md-4">Titulo de la noticia</label>
-							<div class="col-md-6">
-								<div class="input-icon right">
-									<input type="text" class="form-control" name="titulo" placeholder="Aqui va el titulo"/>
+				<form action="<?php echo site_url('/noticias/crear/insertar') ?>" class="form-horizontal" id="formulario_nueva_noticia" method = "post">
+					<div class="modal-body">
+						<!-- BEGIN FORM-->
+							<div class="form-body">
+								<label class="control-label col-md-4">Titulo de la noticia</label>
+								<div class="col-md-6">
+									<div class="input-icon right">
+										<input type="text" class="form-control" name="titulo" placeholder="Aqui va el titulo"/>
+									</div>
+								</div>
+								<br>
+								<label class="control-label col-md-4">Contenido de la noticia</label>
+								<div class="col-md-6">
+									<div class="input-icon right">
+										<textarea type="text" class="form-control" name="contenido" placeholder="Escribe la noticia"></textarea>
+									</div>
+								</div>
+								<br>
+								<label class="control-label col-md-4">Fecha</label>
+								<div class="col-md-6">
+									<div class="input-icon right">
+										<input type="text" class="form-control" name="fecha" placeholder="Fecha de la noticia"/>
+									</div>
 								</div>
 							</div>
-							<br>
-							<label class="control-label col-md-4">Contenido de la noticia</label>
-							<div class="col-md-6">
-								<div class="input-icon right">
-									<textarea type="text" class="form-control" name="contenido" placeholder="Escribe la noticia"></textarea>
-								</div>
-							</div>
-							<br>
-							<label class="control-label col-md-4">Fecha</label>
-							<div class="col-md-6">
-								<div class="input-icon right">
-									<input type="text" class="form-control" name="fecha" placeholder="Fecha de la noticia"/>
-								</div>
-							</div>
-						</div>
-					<div class="clearfix"></div>
-					<!-- END FORM-->
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn default" data-dismiss="modal">Cerrar</button>
-					<button type="submit" class="btn blue">Guardar Noticia</button>
-				</div>
+						<div class="clearfix"></div>
+						<!-- END FORM-->
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn default" data-dismiss="modal">Cerrar</button>
+						<button type="submit" class="btn blue">Guardar Noticia</button>
+					</div>
 				</form>
 			</div>
 		</div>
