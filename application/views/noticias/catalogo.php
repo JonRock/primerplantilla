@@ -85,7 +85,7 @@
 						<div class="form-body">
 							<label class="control-label col-md-4">Titulo de la noticia</label>
 							<div class="col-md-6">
-								<div class="input-icon right"
+								<div class="input-icon right">
 									<input type="text" class="form-control" name="titulo" placeholder="Aqui va el titulo"/>
 								</div>
 							</div>
@@ -93,7 +93,7 @@
 							<label class="control-label col-md-4">Contenido de la noticia</label>
 							<div class="col-md-6">
 								<div class="input-icon right">
-									<input type="text" class="form-control" name="contenido" placeholder="Escribe la noticia"/>
+									<textarea type="text" class="form-control" name="contenido" placeholder="Escribe la noticia"></textarea>
 								</div>
 							</div>
 							<br>
@@ -104,8 +104,6 @@
 								</div>
 							</div>
 						</div>
-
-					</form>
 					<div class="clearfix"></div>
 					<!-- END FORM-->
 				</div>
@@ -113,6 +111,7 @@
 					<button type="button" class="btn default" data-dismiss="modal">Cerrar</button>
 					<button type="submit" class="btn blue">Guardar Noticia</button>
 				</div>
+				</form>
 			</div>
 		</div>
 	</div>

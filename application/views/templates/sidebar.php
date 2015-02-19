@@ -30,7 +30,7 @@
 						<i class="icon-close"></i>
 						</a>
 						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Search...">
+							<input type="text" class="form-control" placeholder="Buscar...">
 							<span class="input-group-btn">
 							<a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>
 							</span>
